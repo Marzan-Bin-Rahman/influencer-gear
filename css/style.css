@@ -22,7 +22,22 @@ h2{
     font-size: 24px;
 }
 
-
+p{
+    font-size: 16px;
+}
+.btn{
+    width: 196px;
+    height: 44px;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #E02C6D;
+}
+.fas{
+    /* font-size: 20px; */
+}
 /* header styling starts */
 header nav{
     display: flex;
@@ -41,4 +56,26 @@ nav ul li a{
     font-size: 16px ;
     margin-left: 15px;
     padding: 20px;
+}
+
+/* top parts starts from here */
+
+.top{
+    display: flex;
+    margin-bottom: 100px;
+}
+.top-text{
+    margin: 60px 130px 170px 120px;
+}
+.top-text h1{
+    font-size: 54px;
+}
+#top-btn{
+    border-radius: 41px;
+    margin-top: 25px;
+}
+.top img{
+    width: 440px;
+    height: 414px;
+    margin-right: 50px;
 }
