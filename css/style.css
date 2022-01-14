@@ -235,7 +235,7 @@ footer .icons .fab{
 
 /* media query strats from here */
 /* mobile view */
-@media (min-width: 688px) {
+/* @media only screen and (min-width: 688px) {
     header nav #menu{
         display: hidden;
     }
@@ -243,4 +243,63 @@ footer .icons .fab{
         width: 257px;
         height: 257px;
     }
+} */
+@media only screen and (max-width: 688px){
+    header nav{
+        margin:0;
+        margin-top: 35px;
+    }
+    header nav h3{
+        text-align: center;
+        font-size: 16px;
+        margin: 0 auto;
+        
+    }
+    header nav #menu{
+        display: none;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+    }
+    .top .top-text{
+        text-align: center;
+        margin: 0 auto;
+        margin-top:22px;
+        width: 100%;
+    }
+    .top .top-text h1{
+        font-size: 28px;
+    }
+    .top img{
+        width: 202px;
+        height: 190px;
+        background-image: url(../images/Circle-design.svg);
+        background-size: 200px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .company-logo, .trust, footer{
+        display: none;
+    }
+    .popular-collection{
+        width: 100%;
+        height: 4504px;
+        margin: 0 auto;
+    }
+    .popular-collection .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    .popular-collection .cards .card{
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 329px;
+        height: 476px;
+    }
+    .popular-collection a{
+        
+    }
+
 }
