@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&family=Roboto:wght@700&display=swap');
 
 /* 
-font-family: 'Inter', sans-serif;
+
 font-family: 'Manrope', sans-serif;
-font-family: 'Roboto', sans-serif;
+
 */
 *{
     margin: 0;
@@ -18,7 +18,7 @@ body{
 
 /* common styles */
 
-h2{
+h3{
     font-size: 24px;
 }
 
@@ -37,8 +37,21 @@ p{
 }
 
 hr{
-    width: 1100px;
-    color: lightgray;
+    width: 1110px;
+    height: 1px;
+    background-color: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+
+}
+h2{
+    font-size: 28px;
+}
+
+.card .card-info>span{
+    display: block;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #787885;
 }
 /* header styling starts */
 header nav{
@@ -79,6 +92,9 @@ nav ul li a{
     width: 440px;
     height: 414px;
     margin-right: 50px;
+    background-image: url(../images/Circle-design.svg);
+    background-size: 400px;
+    background-repeat: no-repeat;
 }
 
 /* company logo part starts from here */
@@ -95,4 +111,68 @@ nav ul li a{
 }
 .logo img{
     margin-left: 60px;
+}
+
+/* popular collection part strats from here */
+
+.popular-collection{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.popular-collection>h2{
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 190px 0 130px;
+}
+.card{
+    width: 329px;
+    height: 476px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.cards .card .card-image{
+    width: 300px;
+    height: 256px;
+    margin: 17px 15px 0 14px;
+}
+.cards .card .card-info{
+    margin-left: 14px;
+    margin-top: 16px;
+}
+.cards .card .card-info h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 6px 0;
+}
+.cards .card .card-info .rating{
+    margin-bottom: 5px;
+}
+.cards .card .card-info .rating .fas{
+    font-size: 10px;
+}
+.cards .card .card-info .rating .filled{
+    color: #FB8200;
+}
+.cards .card .card-info .rating .empty{
+    color: rgb(173, 173, 173);
+}
+.cards .card .card-info .rating span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+.popular-collection a{
+    text-decoration: none;
+    text-align: right;
+    margin-right: 190px;
+    font-size: 16px;
+    color: rgba(224, 44, 109, 0.87)
 }
