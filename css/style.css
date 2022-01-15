@@ -24,7 +24,7 @@ p{
     width: 196px;
     height: 44px;
     outline: 0;
-    border: 0;
+    border: 3px solid rgb(62, 230, 146);
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -32,11 +32,12 @@ p{
     cursor: pointer;
 }
 .btn:hover{
-    color: #E02C6D;
-    background-color: #ffffff;
-    box-shadow: 10px 10px 20px #aa2053;
-    transform: scale(1.2);
-    transition: color .7s ease-in, background-color .7s ease-in, transform .7s ease-in;
+    color: #ffffff;
+    border: 3px solid #E02C6D;
+    background-color: rgb(62, 230, 146);
+    box-shadow: -3px -1px 19px 9px rgb(31 214 129);;
+    transform: scale(1.2) translateX(20px);
+    transition: color ease-in .7s, background-color ease-in .7s, transform ease-in .7s, border ease-in .7s;
 }
 hr{
     width: 1110px;
@@ -199,7 +200,7 @@ nav ul li a{
     text-align: right;
     margin-right: 190px;
     font-size: 16px;
-    color: rgba(224, 44, 109, 0.87)
+    color: rgba(224, 44, 109, 0.87);
 }
 /* trust part here */
 .trust{
@@ -238,6 +239,7 @@ footer .footer-text{
 }
 footer .footer-text span{
     display: block;
+    font-family: 'Manrope', sans-serif;
 }
 footer .icons a{
     text-decoration: none;
@@ -248,6 +250,12 @@ footer .icons .fab{
     padding: 10px;
     border-radius: 50%;
     background-color: #1d185c;
+}
+footer .icons .fab:hover{
+    color: #E02C6D;
+    transform: scale(1.5);
+    background-color: #ffffff;
+    transition: transform ease-in .7s, background-color ease-in .7s, color ease-in .7s;
 }
 
 
