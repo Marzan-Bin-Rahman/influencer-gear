@@ -39,6 +39,9 @@ p{
     transform: scale(1.2) translateX(20px);
     transition: color ease-in .7s, background-color ease-in .7s, transform ease-in .7s, border ease-in .7s;
 }
+.btn:hover i{
+    animation: .8s ease-out 0s infinite riding;
+}
 hr{
     width: 1110px;
     height: 1px;
@@ -74,6 +77,34 @@ h2{
     100% {
       transform: translateY(0);
     }
+  }
+  @keyframes riding {
+      0%{
+          transform: translateX(0);
+      }
+      50%{
+          transform: translateX(150%)
+      }
+      100%{
+        transform: translateX(0);
+      }
+  }
+  @keyframes upRiding {
+      0%{
+          transform: translateY(0);
+      }
+      25%{
+          transform: translateY(-50%);
+      }
+      50%{
+          transform: translateY(0)
+      }
+      75%{
+          transform: translateY(50%)
+      }
+      100%{
+        transform: translateY(0);
+      }
   }
 
 /* header styling starts */
@@ -256,6 +287,7 @@ footer .icons .fab:hover{
     transform: scale(1.5);
     background-color: #ffffff;
     transition: transform ease-in .7s, background-color ease-in .7s, color ease-in .7s;
+    animation: .8s ease-out 0s infinite upRiding;
 }
 
 
