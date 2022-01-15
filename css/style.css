@@ -235,18 +235,14 @@ footer .icons .fab{
 
 /* media query strats from here */
 /* mobile view */
-/* @media only screen and (min-width: 688px) {
-    header nav #menu{
-        display: hidden;
+
+@media only screen and (max-device-width: 688px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    .top img{
-        width: 257px;
-        height: 257px;
-    }
-} */
-@media only screen and (max-width: 688px){
     header nav{
-        margin:0;
         margin-top: 35px;
     }
     header nav h3{
@@ -279,7 +275,7 @@ footer .icons .fab{
         margin: 0 auto;
         margin-top: 20px;
     }
-    .company-logo, .trust, footer{
+    .company-logo{
         display: none;
     }
     .popular-collection{
@@ -299,7 +295,29 @@ footer .icons .fab{
         height: 476px;
     }
     .popular-collection a{
-        
+        display: block;
+        margin: 0;
+        padding: 0;
     }
-
+    .trust{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 100px;
+    }
+    .trust img{
+        width: 299px;
+        height: 188px;
+        margin: 0 auto;
+    }
+    .trust-text{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .trust-text>h2{
+        font-size: 24px;
+    }
+    /* footer{
+        width: 100vw;
+        height: 70vh;
+    } */
 }
